@@ -90,7 +90,9 @@
         <h3>Profil Bilgileri</h3>
         <p>Profil fotoğrafı (isteğe bağlı), biyografi, yaş görünürlük tercihi</p>
         <h3>Etkinlik Verileri</h3>
-        <p>Oluşturulan ve katılınan etkinlikler, QR check-in kayıtları, başvuru mesajları, sohbet mesajları</p>
+        <p>Oluşturulan ve katılınan etkinlikler, QR check-in kayıtları, başvuru mesajları, sohbet mesajları, etkinlik gizlilik tercihleri (herkese açık veya yalnızca takipçilere açık)</p>
+        <h3>Sosyal Etkileşim Verileri</h3>
+        <p>Takip ilişkileri (takip etme, takipçi), takip istekleri ve onay durumları, engelleme kayıtları</p>
         <h3>Güvenilirlik Verileri</h3>
         <p>Güvenilirlik puanı, katılım sayısı</p>
         <h3>Cihaz İzinleri</h3>
@@ -104,10 +106,13 @@
             <li>Etkinlik oluşturma, başvuru ve katılım süreçlerinin yürütülmesi</li>
             <li>Güvenilirlik puanlama sisteminin işletilmesi</li>
             <li>QR check-in ve katılım doğrulama</li>
+            <li>Takip sistemi ve sosyal etkileşimlerin yönetimi</li>
+            <li>Takipçilere özel etkinliklerin gizlilik kontrolü</li>
             <li>Bildirim gönderimi</li>
             <li>İçerik moderasyonu ve topluluk güvenliğinin sağlanması</li>
             <li>Kullanıcılar arası sohbet hizmetinin sunulması</li>
             <li>Raporlama ve şikayet süreçlerinin yönetimi</li>
+            <li>Platform kötüye kullanımının önlenmesi (günlük silme limiti, etkinlik oluşturma kısıtlamaları)</li>
             <li>Yasal yükümlülüklerin yerine getirilmesi</li>
         </ul>
 
@@ -132,6 +137,7 @@
             <li>Hesap verileri: Hesap silinene kadar</li>
             <li>Etkinlik verileri: Etkinlik tarihinden 24 saat sonra otomatik silinir</li>
             <li>Sohbet mesajları: Etkinlik silindiğinde silinir</li>
+            <li>Takip ilişkileri: Hesap silinene kadar veya ilişki sonlandırılana kadar</li>
             <li>Bildirimler: 3 gün sonra otomatik silinir</li>
             <li>Log kayıtları: 5651 sayılı Kanun gereği en az 2 yıl</li>
             <li>Güvenilirlik puanları: Hesap silinene kadar</li>
@@ -158,7 +164,17 @@
         </ul>
 
         <h2>9. Hesap Silme</h2>
-        <p>Hesabınızı uygulama içinden Profil > Hesabı Sil seçeneğiyle silebilirsiniz. Uygulamayı silmiş olsanız bile hesabınızın ve tüm verilerinizin silinmesini talep edebilirsiniz. Bunun için <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine "Hesap Silme Talebi" başlıklı bir e-posta gönderin. Talebiniz en geç 72 saat içinde işleme alınacaktır. Hesap silindiğinde tüm kişisel verileriniz kalıcı olarak silinir. Yasal saklama yükümlülüğü bulunan veriler ilgili sürenin sonunda imha edilir.</p>
+        <p>Hesabınızı uygulama içinden Profil > Hesabı Sil seçeneğiyle silebilirsiniz. Hesap silindiğinde aşağıdaki tüm verileriniz kalıcı olarak ve otomatik olarak silinir:</p>
+        <ul>
+            <li>Profil bilgileriniz ve profil fotoğrafınız</li>
+            <li>Oluşturduğunuz tüm etkinlikler ve alt verileri (başvurular, mesajlar, oylamalar)</li>
+            <li>Yaptığınız tüm başvurular</li>
+            <li>Takip ilişkileriniz (takip ettikleriniz ve takipçileriniz)</li>
+            <li>Bildirimleriniz</li>
+            <li>Raporlarınız ve geri bildirimleriniz</li>
+            <li>Engelleme kayıtlarınız</li>
+        </ul>
+        <p>Uygulamayı silmiş olsanız bile hesabınızın ve tüm verilerinizin silinmesini talep edebilirsiniz. Bunun için <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine "Hesap Silme Talebi" başlıklı bir e-posta gönderin. Talebiniz en geç 72 saat içinde işleme alınacaktır. Yasal saklama yükümlülüğü bulunan veriler ilgili sürenin sonunda imha edilir.</p>
 
         <h2>10. Değişiklikler</h2>
         <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinden bildirilir.</p>
@@ -196,7 +212,17 @@
                 <li>Platformun teknik altyapısına zarar verecek hiçbir girişimde bulunulamaz.</li>
             </ul>
 
-            <h2>3. Sorumluluk Sınırlaması</h2>
+            <h2>3. Etkinlik ve Takip Kuralları</h2>
+            <ul>
+                <li>Kullanıcılar aynı anda en fazla 1 aktif etkinlik oluşturabilir.</li>
+                <li>Günde en fazla 3 etkinlik silinebilir. 3. silme işleminden sonra 24 saat boyunca yeni etkinlik oluşturulamaz.</li>
+                <li>Etkinlikler herkese açık veya yalnızca takipçilere açık olarak oluşturulabilir. Takipçilere özel etkinlikler yalnızca organizatörün takipçileri tarafından görülebilir.</li>
+                <li>Takip sistemi istek onaylı çalışır. Takip isteği gönderilir, karşı taraf kabul veya reddeder.</li>
+                <li>Kullanıcılar istedikleri zaman takipten çıkabilir veya takipçilerini çıkarabilir.</li>
+                <li>Engelleme durumunda tüm takip ilişkileri otomatik olarak sonlandırılır.</li>
+            </ul>
+
+            <h2>4. Sorumluluk Sınırlaması</h2>
             <p>VennY, kullanıcılar arasında aracı bir platform olarak hizmet vermektedir. Bu kapsamda:</p>
             <ul>
                 <li>VennY, etkinliklerde yaşanan olaylardan sorumlu değildir.</li>
@@ -206,13 +232,13 @@
                 <li>VennY, 5651 sayılı Kanun kapsamında yer sağlayıcı konumundadır.</li>
             </ul>
 
-            <h2>4. Hesap Sonlandırma</h2>
+            <h2>5. Hesap Sonlandırma</h2>
             <ul>
-                <li>Kullanıcılar hesaplarını istedikleri zaman silebilir.</li>
+                <li>Kullanıcılar hesaplarını istedikleri zaman silebilir. Hesap silindiğinde tüm veriler (etkinlikler, başvurular, takip ilişkileri, mesajlar, bildirimler, profil fotoğrafı ve engelleme kayıtları) kalıcı olarak silinir.</li>
                 <li>VennY, koşulları ihlal eden hesapları askıya alabilir veya kapatabilir.</li>
             </ul>
 
-            <h2>5. Uyuşmazlıkların Çözümü</h2>
+            <h2>6. Uyuşmazlıkların Çözümü</h2>
             <p>Uyuşmazlıklarda Türkiye Cumhuriyeti kanunları uygulanır. İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
         </div>
 
@@ -227,7 +253,6 @@
                 <li>Ayrımcılık, nefret söylemi ve hakaret yasaktır.</li>
                 <li>Taciz, tehdit, zorbalık ve korkutma yasaktır.</li>
                 <li>Diğer kullanıcıların kişisel bilgilerini izinsiz paylaşmak yasaktır.</li>
-                <!-- YENİ EKLEME: Şikayet ve Engelleme -->
                 <li>Kullanıcılar, rahatsız edici buldukları etkinlikleri veya diğer kullanıcıları uygulama içindeki <strong>"Şikayet Et"</strong> ve <strong>"Engelle"</strong> butonlarını kullanarak anında bildirebilir veya gizleyebilirler. Şikayetler 24 saat içinde incelenir.</li>
             </ul>
 
@@ -237,19 +262,26 @@
                 <li>Şiddet içerikli paylaşımlar yasaktır.</li>
                 <li>Spam, reklam ve ticari tanıtım yasaktır.</li>
                 <li>Sahte profil oluşturmak yasaktır.</li>
-                <!-- YENİ EKLEME: CSAM Sıfır Tolerans -->
                 <li><strong>Çocukların cinsel istismarına yönelik her türlü içerik (CSAM) kesinlikle yasaktır. Sıfır tolerans politikası uygulanır; bu tür içerikleri paylaşan hesaplar derhal kalıcı olarak kapatılır ve yetkili yasal mercilere bildirilir.</strong></li>
             </ul>
 
-            <h2>3. Hesap Kısıtlamaları</h2>
+            <h2>3. Takip Sistemi Kuralları</h2>
+            <ul>
+                <li>Takip sistemi karşılıklı saygı çerçevesinde kullanılmalıdır.</li>
+                <li>Takip isteklerini toplu veya otomatik olarak göndermek (spam takip) yasaktır.</li>
+                <li>Engellenen kullanıcıların farklı hesaplarla takip etmeye çalışması yasaktır.</li>
+            </ul>
+
+            <h2>4. Hesap Kısıtlamaları</h2>
             <ul>
                 <li>İlk ihlal: Uyarı</li>
                 <li>Tekrarlayan ihlal: 7 gün hesap kısıtlaması</li>
                 <li>Ciddi ihlal: Kalıcı hesap kapatma</li>
                 <li>Yasa dışı faaliyet: Hesap kapatma ve yetkili makamlara bildirim</li>
+                <li>Günde 3'ten fazla etkinlik silme: 24 saat etkinlik oluşturma kısıtlaması</li>
             </ul>
 
-            <h2>4. Yaş Sınırı</h2>
+            <h2>5. Yaş Sınırı</h2>
             <p>VennY yalnızca 18 yaş ve üzeri kullanıcılara açıktır.</p>
         </div>
 
