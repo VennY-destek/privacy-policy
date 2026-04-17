@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VennY — Gizlilik Politikası</title>
+    <title>VennY — Yasal Metinler</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -36,7 +36,7 @@
         }
         h1 { font-size: 22px; color: #1E293B; margin-bottom: 8px; }
         h2 { font-size: 17px; color: #1E293B; margin-top: 28px; margin-bottom: 8px; }
-        h3 { font-size: 14px; color: #334155; margin-top: 14px; margin-bottom: 4px; }
+        h3 { font-size: 14px; color: #334155; margin-top: 14px; margin-bottom: 4px; font-weight: 600; }
         p { margin-bottom: 10px; font-size: 14px; }
         ul { padding-left: 20px; margin-bottom: 10px; }
         li { font-size: 14px; margin-bottom: 4px; }
@@ -64,6 +64,8 @@
             margin: 0 12px;
             cursor: pointer;
         }
+        .section { margin-top: 32px; padding-top: 32px; border-top: 2px solid #F1F5F9; }
+        .strong { font-weight: 700; }
         @media (max-width: 600px) { .container { padding: 24px 18px; } }
     </style>
 </head>
@@ -72,13 +74,15 @@
         <div class="logo">VennY</div>
         <div class="subtitle">Sosyal Etkinlik Platformu</div>
 
-        <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-        <p class="date">Son güncelleme: Mart 2026</p>
+        <!-- ==================== GİZLİLİK POLİTİKASI ==================== -->
 
-        <p>İşbu Gizlilik Politikası, VennY mobil uygulaması ("Platform") aracılığıyla toplanan kişisel verilerin işlenmesine ilişkin 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında aydınlatma yükümlülüğünün yerine getirilmesi amacıyla hazırlanmıştır.</p>
+        <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+        <p class="date">Son güncelleme: Nisan 2026</p>
+
+        <p>İşbu Gizlilik Politikası, Yiğit Öner ("VennY", "biz") tarafından işletilen VennY mobil uygulaması ("Platform") aracılığıyla toplanan kişisel verilerin işlenmesine ilişkin 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında aydınlatma yükümlülüğünün yerine getirilmesi amacıyla hazırlanmıştır.</p>
 
         <h2>1. Veri Sorumlusu</h2>
-        <p>Yiğit Öner (Bireysel Geliştirici)<br>İletişim: <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a><br>Adres: İstanbul, Türkiye</p>
+        <p>Veri Sorumlusu: Yiğit Öner<br>İletişim: <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a><br>Adres: İstanbul, Türkiye</p>
 
         <h2>2. Toplanan Kişisel Veriler</h2>
         <h3>Kimlik Bilgileri</h3>
@@ -86,7 +90,7 @@
         <h3>İletişim Bilgileri</h3>
         <p>E-posta adresi</p>
         <h3>Hesap Güvenliği</h3>
-        <p>Şifre (şifrelenmiş halde saklanır), giriş kayıtları</p>
+        <p>Şifre (şifrelenmiş halde saklanır — VennY şifrenizi göremez), giriş kayıtları</p>
         <h3>Profil Bilgileri</h3>
         <p>Profil fotoğrafı (isteğe bağlı), biyografi, yaş görünürlük tercihi</p>
         <h3>Etkinlik Verileri</h3>
@@ -94,43 +98,54 @@
         <h3>Sosyal Etkileşim Verileri</h3>
         <p>Takip ilişkileri (takip etme, takipçi), takip istekleri ve onay durumları, engelleme kayıtları</p>
         <h3>Güvenilirlik Verileri</h3>
-        <p>Güvenilirlik puanı, katılım sayısı</p>
-        <h3>Cihaz İzinleri</h3>
-        <p>Kamera (QR check-in için), bildirim izni (push bildirimler için)</p>
+        <p>Güvenilirlik puanı, katılım sayısı, no-show kayıtları</p>
         <h3>Teknik Veriler</h3>
-        <p>Cihaz bilgileri, IP adresi, bildirim tokeni, uygulama kullanım verileri</p>
+        <p>Cihaz bilgileri, IP adresi, FCM token (bildirim için), uygulama kullanım verileri</p>
+        <h3>Cihaz İzinleri</h3>
+        <p>Kamera Erişimi: QR check-in taraması ve profil fotoğrafı çekmek için cihazınızın kamerasına erişim talep edilir. Kamera yalnızca bu amaçlarla kullanılır ve sürekli erişim sağlanmaz.</p>
+        <p>Galeri/Fotoğraf Erişimi: Profil fotoğrafı yüklemek için cihazınızın fotoğraf galerisine erişim talep edilir. Galerinizdeki diğer fotoğraflara erişim sağlanmaz, yalnızca seçtiğiniz fotoğraf yüklenir.</p>
+        <p>Bildirim İzni: Etkinlik hatırlatmaları, başvuru durumu ve moderasyon bildirimleri göndermek için bildirim izni talep edilir.</p>
+        <h3>Raporlama Verileri</h3>
+        <p>Raporlama ve şikayet kayıtları, engelleme listeleri</p>
+        <h3>Geri Bildirim Verileri</h3>
+        <p>Bize Ulaşın formu aracılığıyla gönderilen mesajlar ve konu bilgileri</p>
 
         <h2>3. Verilerin İşlenme Amaçları</h2>
         <ul>
-            <li>Hesap oluşturma ve yönetimi</li>
+            <li>Hesap oluşturma, kimlik doğrulama ve yönetimi</li>
             <li>Etkinlik oluşturma, başvuru ve katılım süreçlerinin yürütülmesi</li>
             <li>Güvenilirlik puanlama sisteminin işletilmesi</li>
             <li>QR check-in ve katılım doğrulama</li>
             <li>Takip sistemi ve sosyal etkileşimlerin yönetimi</li>
             <li>Takipçilere özel etkinliklerin gizlilik kontrolü</li>
-            <li>Bildirim gönderimi</li>
+            <li>Bildirim gönderimi (başvuru durumu, etkinlik hatırlatma, moderasyon)</li>
             <li>İçerik moderasyonu ve topluluk güvenliğinin sağlanması</li>
             <li>Kullanıcılar arası sohbet hizmetinin sunulması</li>
             <li>Raporlama ve şikayet süreçlerinin yönetimi</li>
+            <li>Geri bildirim ve destek taleplerinin değerlendirilmesi</li>
             <li>Platform kötüye kullanımının önlenmesi (günlük silme limiti, etkinlik oluşturma kısıtlamaları)</li>
-            <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+            <li>Yasal yükümlülüklerin yerine getirilmesi (5651 sayılı Kanun dahil)</li>
+            <li>Platform performansının iyileştirilmesi ve hata tespiti</li>
+            <li>Dolandırıcılık, kötüye kullanım ve yasadışı faaliyetlerin tespiti ve önlenmesi</li>
         </ul>
 
         <h2>4. Hukuki Sebepler</h2>
         <p>Kişisel verileriniz KVKK madde 5/2 kapsamında aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:</p>
         <ul>
-            <li>Sözleşmenin kurulması ve ifası</li>
-            <li>Veri sorumlusunun meşru menfaati</li>
-            <li>Hukuki yükümlülük (5651 sayılı Kanun kapsamında log kayıtları)</li>
-            <li>Açık rızanız (profil fotoğrafı, isteğe bağlı bildirimler)</li>
+            <li>Sözleşmenin kurulması ve ifası (hesap oluşturma, etkinlik katılımı, Platform hizmetlerinin sunulması)</li>
+            <li>Veri sorumlusunun meşru menfaati (güvenlik, moderasyon, platform iyileştirme, dolandırıcılık önleme)</li>
+            <li>Hukuki yükümlülük (5651 sayılı Kanun kapsamında log kayıtları, yargı mercii talepleri)</li>
+            <li>Açık rızanız (profil fotoğrafı yükleme, isteğe bağlı bildirimler, kişisel verilerinizin yurt dışı sunucularında işlenmesi)</li>
         </ul>
 
         <h2>5. Verilerin Aktarılması</h2>
+        <p>Kişisel verileriniz aşağıdaki taraflara aktarılabilir:</p>
         <ul>
-            <li>Firebase/Google Cloud: Veri depolama ve bildirim altyapısı (sunucular yurt dışında olabilir)</li>
-            <li>Yetkili kamu kurum ve kuruluşları: Yasal zorunluluk halinde</li>
+            <li>Firebase/Google Cloud: Veri depolama, kimlik doğrulama ve bildirim altyapısı. Sunucular yurt dışında (ABD ve AB) bulunabilir. Google, uluslararası veri koruma standartlarına (SOC 2, ISO 27001) uymaktadır.</li>
+            <li>Yurt dışı veri aktarımı: Kişisel verileriniz, Platform hizmetlerinin sunulması amacıyla Firebase/Google Cloud altyapısı aracılığıyla yurt dışındaki sunuculara aktarılmaktadır. Bu aktarım, KVKK madde 9 kapsamında açık rızanıza dayanmaktadır. Kayıt sırasında onay vermeniz halinde kişisel verilerinizin yurt dışına aktarılmasına açık rıza göstermiş olursunuz.</li>
+            <li>Yetkili kamu kurum ve kuruluşları: Yasal zorunluluk halinde (mahkeme kararı, savcılık talebi vb.)</li>
         </ul>
-        <p>Verileriniz hiçbir koşulda reklam veya pazarlama amacıyla üçüncü taraflarla paylaşılmaz.</p>
+        <p>Verileriniz hiçbir koşulda reklam, pazarlama veya profilleme amacıyla üçüncü taraflarla paylaşılmaz veya satılmaz.</p>
 
         <h2>6. Verilerin Saklanması</h2>
         <ul>
@@ -141,14 +156,19 @@
             <li>Bildirimler: 3 gün sonra otomatik silinir</li>
             <li>Log kayıtları: 5651 sayılı Kanun gereği en az 2 yıl</li>
             <li>Güvenilirlik puanları: Hesap silinene kadar</li>
+            <li>Geri bildirimler: İlgili süreç tamamlanana kadar</li>
         </ul>
+        <p>İşlenme amacı ortadan kalkan veriler, yasal saklama süreleri sona erdikten sonra silinir veya anonim hale getirilir.</p>
 
         <h2>7. Veri Güvenliği</h2>
+        <p>Kişisel verilerinizin güvenliği için aşağıdaki teknik ve idari tedbirler uygulanmaktadır:</p>
         <ul>
-            <li>Şifreler Firebase Authentication ile şifrelenmiş olarak saklanır</li>
-            <li>Veritabanı erişim kuralları ile yetkisiz erişim engellenir</li>
-            <li>İletişim SSL/TLS şifreleme ile korunur</li>
+            <li>Şifreler Firebase Authentication ile şifrelenmiş (hash) olarak saklanır — VennY dahil hiç kimse şifrenizi göremez</li>
+            <li>Veritabanı erişim kuralları (Firestore Security Rules) ile yetkisiz erişim engellenir</li>
+            <li>Tüm iletişim SSL/TLS şifreleme ile korunur</li>
+            <li>Admin erişimi yetkili kişilerle sınırlıdır</li>
         </ul>
+        <p>Hiçbir elektronik iletişim veya depolama yöntemi %100 güvenli değildir. Bu nedenle mutlak güvenlik garanti edilememektedir, ancak verilerinizin korunması için azami özen gösterilmektedir.</p>
 
         <h2>8. Haklarınız (KVKK Madde 11)</h2>
         <p>KVKK kapsamında aşağıdaki haklara sahipsiniz:</p>
@@ -159,12 +179,13 @@
             <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
             <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
             <li>İşlenmesini gerektiren sebeplerin ortadan kalkması halinde silinmesini isteme</li>
-            <li>Münhasıran otomatik sistemlerle analiz sonucu aleyhinize sonuç çıkması halinde itiraz etme</li>
+            <li>Düzeltme veya silme işleminin aktarılan üçüncü kişilere bildirilmesini isteme</li>
+            <li>Münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonuç çıkması halinde itiraz etme</li>
             <li>Kanuna aykırı işlenme sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
         </ul>
 
-        <h2>9. Hesap Silme</h2>
-        <p>Hesabınızı uygulama içinden Profil > Hesabı Sil seçeneğiyle silebilirsiniz. Hesap silindiğinde aşağıdaki tüm verileriniz kalıcı olarak ve otomatik olarak silinir:</p>
+        <h2>9. Hesap Silme ve Verilerin İmhası</h2>
+        <p>Hesabınızı uygulama içinden Profil > Hesabı Sil seçeneğiyle silebilirsiniz. Yasal saklama yükümlülüğü bulunan veriler hariç olmak üzere, hesap silindiğinde aşağıdaki tüm verileriniz kalıcı olarak ve otomatik olarak silinir:</p>
         <ul>
             <li>Profil bilgileriniz ve profil fotoğrafınız</li>
             <li>Oluşturduğunuz tüm etkinlikler ve alt verileri (başvurular, mesajlar, oylamalar)</li>
@@ -173,116 +194,264 @@
             <li>Bildirimleriniz</li>
             <li>Raporlarınız ve geri bildirimleriniz</li>
             <li>Engelleme kayıtlarınız</li>
+            <li>Güvenilirlik puanlarınız ve katılım geçmişiniz</li>
         </ul>
-        <p>Uygulamayı silmiş olsanız bile hesabınızın ve tüm verilerinizin silinmesini talep edebilirsiniz. Bunun için <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine "Hesap Silme Talebi" başlıklı bir e-posta gönderin. Talebiniz en geç 72 saat içinde işleme alınacaktır. Yasal saklama yükümlülüğü bulunan veriler ilgili sürenin sonunda imha edilir.</p>
+        <p>Yasal saklama yükümlülüğü bulunan veriler (log kayıtları) ilgili sürenin sonunda imha edilir. Silme işlemi geri alınamaz.</p>
+        <p>Uygulamayı silmiş olsanız bile hesabınızın ve tüm verilerinizin silinmesini talep edebilirsiniz. Bunun için <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine "Hesap Silme Talebi" başlıklı bir e-posta gönderin. Talebiniz en geç 72 saat içinde işleme alınacaktır.</p>
 
-        <h2>10. Değişiklikler</h2>
-        <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinden bildirilir.</p>
+        <h2>10. Çocukların Gizliliği</h2>
+        <p>Platform 18 yaş altındaki bireylere yönelik değildir. Bilerek 18 yaş altındaki kişilerden kişisel veri toplamayız. 18 yaş altında bir kullanıcı tespit edilmesi halinde hesabı derhal kapatılır ve verileri silinir.</p>
+
+        <h2>11. Başvuru</h2>
+        <p>KVKK kapsamındaki haklarınızı kullanmak için <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine "KVKK Başvurusu" konusuyla e-posta gönderebilirsiniz. Başvurularınız en geç 30 gün içinde ücretsiz olarak yanıtlanır. İşlemin maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarafından belirlenen tarife uygulanabilir.</p>
+
+        <h2>12. Değişiklikler</h2>
+        <p>Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla duyurulur. Platformu kullanmaya devam etmeniz güncel politikayı kabul ettiğiniz anlamına gelir. Değişiklikleri kabul etmiyorsanız hesabınızı kapatabilirsiniz.</p>
 
         <div class="contact">
             KVKK haklarınız için: <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a>
         </div>
 
-        <div class="nav">
-            <a onclick="document.getElementById('terms').style.display='block'; this.style.display='none';">Kullanım Koşulları</a>
-            <a onclick="document.getElementById('community').style.display='block'; this.style.display='none';">Topluluk Kuralları</a>
-        </div>
+        <!-- ==================== KULLANIM KOŞULLARI ==================== -->
 
-        <!-- KULLANIM KOŞULLARI -->
-        <div id="terms" style="display:none; margin-top: 32px; padding-top: 32px; border-top: 2px solid #F1F5F9;">
+        <div class="section">
             <h1>Kullanım Koşulları</h1>
-            <p class="date">Son güncelleme: Mart 2026</p>
+            <p class="date">Son güncelleme: Nisan 2026</p>
 
-            <p>İşbu Kullanım Koşulları, VennY mobil uygulamasının ("Platform") kullanımına ilişkin şart ve koşulları belirlemektedir. Platformu kullanarak bu koşulları kabul etmiş sayılırsınız.</p>
+            <p>İşbu Kullanım Koşulları, Yiğit Öner ("VennY", "biz") tarafından işletilen VennY mobil uygulamasının ("Platform") kullanımına ilişkin şart ve koşulları belirlemektedir. Platformu kullanarak bu koşulları kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız Platformu kullanmayınız.</p>
 
-            <h2>1. Üyelik Koşulları</h2>
+            <h2>1. Tanımlar</h2>
             <ul>
-                <li>Platformu kullanmak için en az 18 yaşında olmanız gerekmektedir.</li>
-                <li>Kayıt sırasında verdiğiniz bilgilerin doğru ve güncel olması zorunludur.</li>
-                <li>Her kullanıcı yalnızca bir hesap oluşturabilir.</li>
-                <li>Hesap bilgilerinizin güvenliğinden siz sorumlusunuz.</li>
+                <li>Platform: VennY mobil uygulaması ve bağlı tüm hizmetler</li>
+                <li>Kullanıcı: Platforma kayıt olan ve hizmetleri kullanan gerçek kişi</li>
+                <li>Organizatör: Platform üzerinde etkinlik oluşturan kullanıcı</li>
+                <li>Katılımcı: Bir etkinliğe başvuran ve kabul edilen kullanıcı</li>
+                <li>İçerik: Kullanıcıların Platform üzerinde paylaştığı her türlü bilgi, metin, fotoğraf ve diğer materyaller</li>
             </ul>
 
-            <h2>2. Platform Kullanım Kuralları</h2>
+            <h2>2. Üyelik Koşulları</h2>
+            <ul>
+                <li>Platformu kullanmak için en az 18 yaşında olmanız gerekmektedir. Kayıt olarak 18 yaşından büyük olduğunuzu beyan ve taahhüt edersiniz.</li>
+                <li>Kayıt sırasında verdiğiniz bilgilerin doğru, güncel ve eksiksiz olması zorunludur. Yanlış veya yanıltıcı bilgi vermek hesap kapatma sebebidir.</li>
+                <li>Her kullanıcı yalnızca bir hesap oluşturabilir. Birden fazla hesap tespit edilirse tüm hesaplar kapatılabilir.</li>
+                <li>Hesap bilgilerinizin ve şifrenizin güvenliğinden yalnızca siz sorumlusunuz. Şifrenizi üçüncü kişilerle paylaşmayınız. Hesabınız üzerinden gerçekleştirilen tüm işlemlerden siz sorumlu tutulursunuz.</li>
+                <li>Hesabınıza yetkisiz erişim olduğunu fark ederseniz derhal <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine bildirmeniz gerekmektedir.</li>
+                <li>VennY, herhangi bir gerekçe ile ve önceden bildirim yapmaksızın hesapları askıya alma veya kalıcı olarak sonlandırma hakkını saklı tutar.</li>
+            </ul>
+
+            <h2>3. Platform Kullanım Kuralları</h2>
             <ul>
                 <li>Platform yalnızca sosyal etkinlik oluşturma ve katılma amacıyla kullanılabilir.</li>
-                <li>Ticari amaçlı etkinlik, reklam veya satış yapmak yasaktır.</li>
-                <li>Yasa dışı faaliyetlere yönelik etkinlik oluşturmak yasaktır.</li>
+                <li>Ticari amaçlı etkinlik, reklam, tanıtım veya satış yapmak yasaktır.</li>
+                <li>Yasa dışı faaliyetlere yönelik etkinlik oluşturmak veya Platformu bu amaçla kullanmak kesinlikle yasaktır.</li>
                 <li>Topluluk Kurallarına uygun davranmak zorunludur.</li>
-                <li>Platformun teknik altyapısına zarar verecek hiçbir girişimde bulunulamaz.</li>
+                <li>Platformun teknik altyapısına zarar verecek, güvenliğini tehdit edecek veya işleyişini engelleyecek hiçbir girişimde bulunulamaz.</li>
+                <li>Otomatik veri çekme (scraping), bot kullanma, tersine mühendislik yapmak veya Platformun kaynak kodunu kopyalamaya çalışmak yasaktır.</li>
+                <li>Diğer kullanıcıların kişisel verilerini izinsiz toplamak, saklamak veya paylaşmak yasaktır.</li>
+            </ul>
+            <h3>Sıfır Tolerans Politikası</h3>
+            <p>VennY, sakıncalı içeriklere (müstehcen, nefret söylemi, şiddet, taciz, terör propagandası vb.) ve kötü niyetli kullanıcılara karşı sıfır tolerans politikası uygular. Bu tür içerik oluşturan veya paylaşan kullanıcıların hesapları önceden uyarı yapılmaksızın kalıcı olarak kapatılabilir. Kullanıcılar, Platform içindeki raporlama araçlarını kullanarak sakıncalı içerik veya kötü niyetli davranışları bildirebilir. Tüm raporlar en kısa sürede değerlendirilir ve gerekli yaptırımlar uygulanır.</p>
+
+            <h2>4. Etkinlik Kuralları</h2>
+            <ul>
+                <li>Organizatörler, etkinlik bilgilerinin doğruluğundan ve güncelliğinden sorumludur.</li>
+                <li>Her kullanıcı aynı anda en fazla 1 aktif etkinlik oluşturabilir.</li>
+                <li>Günde en fazla 3 etkinlik silinebilir. 3. silme işleminden sonra 24 saat boyunca yeni etkinlik oluşturulamaz.</li>
+                <li>Etkinlikler herkese açık veya yalnızca takipçilere açık olarak oluşturulabilir.</li>
+                <li>Etkinlik saatine 1.5 saatten az kaldığında etkinlik düzenlenemez, silinemez ve katılımcılar çıkarılamaz.</li>
+                <li>Etkinlik saatinden 1 saat sonra organizatör "Etkinliği Bitir" butonunu kullanabilir.</li>
+                <li>Etkinlik saatinden 24 saat sonra tüm etkinlik verileri (mesajlar, başvurular dahil) otomatik olarak silinir.</li>
+                <li>QR check-in ile katılım doğrulanır ve güvenilirlik puanı hesaplanır.</li>
             </ul>
 
-            <h2>3. Etkinlik ve Takip Kuralları</h2>
+            <h2>5. Takip Sistemi</h2>
             <ul>
-                <li>Kullanıcılar aynı anda en fazla 1 aktif etkinlik oluşturabilir.</li>
-                <li>Günde en fazla 3 etkinlik silinebilir. 3. silme işleminden sonra 24 saat boyunca yeni etkinlik oluşturulamaz.</li>
-                <li>Etkinlikler herkese açık veya yalnızca takipçilere açık olarak oluşturulabilir. Takipçilere özel etkinlikler yalnızca organizatörün takipçileri tarafından görülebilir.</li>
                 <li>Takip sistemi istek onaylı çalışır. Takip isteği gönderilir, karşı taraf kabul veya reddeder.</li>
                 <li>Kullanıcılar istedikleri zaman takipten çıkabilir veya takipçilerini çıkarabilir.</li>
                 <li>Engelleme durumunda tüm takip ilişkileri otomatik olarak sonlandırılır.</li>
+                <li>Takip isteklerini toplu veya otomatik olarak göndermek (spam takip) yasaktır.</li>
             </ul>
 
-            <h2>4. Sorumluluk Sınırlaması</h2>
+            <h2>6. Güvenilirlik Sistemi</h2>
+            <ul>
+                <li>Kullanıcıların 1-5 arası güvenilirlik puanı vardır.</li>
+                <li>QR check-in yapan katılımcılar ve en az 1 katılımcısı olan organizatörler 5 yıldız alır.</li>
+                <li>Kabul edildiği halde gelmeyen katılımcılar 1 yıldız alır.</li>
+                <li>Organizatör gelmedi oylamasında %50 ve üzeri oy alan organizatör 1 yıldız ve 7 gün hesap kısıtlaması alır.</li>
+                <li>Güvenilirlik puanı diğer kullanıcılar tarafından görülebilir.</li>
+            </ul>
+
+            <h2>7. İçerik Lisansı ve Sorumluluk</h2>
+            <p>Platformda paylaştığınız içeriklerin (etkinlik açıklamaları, mesajlar, profil bilgileri, fotoğraflar) mülkiyeti size aittir. Ancak içerik paylaşarak aşağıdaki hakları VennY'a vermiş olursunuz:</p>
+            <ul>
+                <li>Platformun işletilmesi, geliştirilmesi ve tanıtılması amacıyla içeriklerinizi kullanma, gösterme ve dağıtma hakkı (münhasır olmayan, dünya genelinde, süresiz lisans).</li>
+                <li>Bu lisans, hesabınızı silmeniz halinde sona erer (yasal saklama yükümlülüğüne tabi veriler hariç).</li>
+            </ul>
+            <p>İçeriklerinizin yasal olmasından, üçüncü kişilerin haklarını ihlal etmemesinden ve doğruluğundan yalnızca siz sorumlusunuz.</p>
+
+            <h2>8. Sorumluluk Sınırlaması ve Feragat</h2>
             <p>VennY, kullanıcılar arasında aracı bir platform olarak hizmet vermektedir. Bu kapsamda:</p>
             <ul>
-                <li>VennY, etkinliklerde yaşanan olaylardan sorumlu değildir.</li>
-                <li>Kullanıcıların birbirleriyle olan ilişkileri kendi sorumluluğundadır.</li>
-                <li>Etkinliklere katılım tamamen kullanıcının kendi iradesiyle gerçekleşir.</li>
-                <li>VennY, platformun kesintisiz ve hatasız çalışacağını garanti etmez.</li>
+                <li>VennY, etkinliklerde yaşanan hiçbir olaydan (kaza, yaralanma, anlaşmazlık, hırsızlık, zarar, hastalık, ölüm vb.) doğrudan veya dolaylı olarak sorumlu değildir.</li>
+                <li>Etkinliklere katılım tamamen kullanıcının kendi iradesiyle gerçekleşir. Bazı etkinlikler doğası gereği risk içerebilir. Katılarak bu riskleri kabul etmiş sayılırsınız.</li>
+                <li>Kullanıcıların birbirleriyle olan ilişkileri, anlaşmazlıkları ve iletişimleri kendi sorumluluğundadır.</li>
+                <li>VennY, kullanıcıların paylaştığı içeriklerin doğruluğunu, güvenilirliğini veya yasallığını garanti etmez.</li>
+                <li>VennY, kullanıcılar hakkında arka plan kontrolü yapmaz ve kullanıcıların beyanlarının doğruluğunu teyit etmez.</li>
+                <li>Platform "olduğu gibi" (as-is) sunulmaktadır. VennY, Platformun kesintisiz, hatasız veya güvenli çalışacağını garanti etmez.</li>
                 <li>VennY, 5651 sayılı Kanun kapsamında yer sağlayıcı konumundadır.</li>
             </ul>
+            <h3>Mağaza Bağımsızlığı ve Sponsorluk Bildirimi</h3>
+            <p>VennY üzerinden düzenlenen etkinlikler, organizasyonlar ve aktiviteler; Apple Inc., Google LLC veya herhangi bir uygulama mağazası operatörü tarafından desteklenmemekte, sponsor edilmemekte veya onaylanmamaktadır.</p>
 
-            <h2>5. Hesap Sonlandırma</h2>
+            <h2>9. Tazminat</h2>
+            <p>Platformu kullanımınızdan, içeriklerinizden, bu koşulları ihlal etmenizden veya bir etkinliğe katılımınızdan kaynaklanan üçüncü kişi talep, dava ve zararlarına karşı VennY'ı ve yetkililerini tazmin etmeyi, savunmayı ve zararsız tutmayı kabul edersiniz.</p>
+
+            <h2>10. Fikri Mülkiyet</h2>
+            <p>VennY uygulamasının tasarımı, logosu, yazılımı, arayüzü, kaynak kodu ve özgün içerikleri Yiğit Öner'e aittir. İzinsiz kopyalanamaz, çoğaltılamaz, değiştirilemez veya dağıtılamaz.</p>
+
+            <h2>11. Hesap Sonlandırma</h2>
             <ul>
-                <li>Kullanıcılar hesaplarını istedikleri zaman silebilir. Hesap silindiğinde tüm veriler (etkinlikler, başvurular, takip ilişkileri, mesajlar, bildirimler, profil fotoğrafı ve engelleme kayıtları) kalıcı olarak silinir.</li>
-                <li>VennY, koşulları ihlal eden hesapları askıya alabilir veya kapatabilir.</li>
+                <li>Kullanıcılar hesaplarını istedikleri zaman uygulama içinden (Profil > Hesabı Sil) silebilir. Yasal saklama yükümlülüğü bulunan veriler hariç olmak üzere, hesap silindiğinde tüm veriler (profil bilgileri, etkinlikler, başvurular, takip ilişkileri, mesajlar, bildirimler, profil fotoğrafı, raporlar, geri bildirimler ve engelleme kayıtları) kalıcı olarak silinir.</li>
+                <li>VennY, işbu koşulları ihlal eden, topluluk kurallarına uymayan veya Platform güvenliğini tehdit eden kullanıcıların hesaplarını önceden bildirim yapmaksızın askıya alabilir veya kalıcı olarak kapatabilir.</li>
+                <li>Hesap kapatıldığında kişisel veriler Gizlilik Politikası çerçevesinde işlenir.</li>
             </ul>
 
-            <h2>6. Uyuşmazlıkların Çözümü</h2>
-            <p>Uyuşmazlıklarda Türkiye Cumhuriyeti kanunları uygulanır. İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+            <h2>12. Yasal Bildirimler</h2>
+            <ul>
+                <li>Yargı mercilerinden gelen yasal talepler doğrultusunda kullanıcı bilgileri yetkili makamlara paylaşılabilir.</li>
+                <li>5651 sayılı Kanun kapsamında log kayıtları yasal süre boyunca (en az 2 yıl) saklanır.</li>
+            </ul>
+
+            <h2>13. Değişiklikler</h2>
+            <p>VennY, işbu Kullanım Koşullarını herhangi bir zamanda güncelleme hakkını saklı tutar. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla duyurulur. Platformu kullanmaya devam etmeniz güncel koşulları kabul ettiğiniz anlamına gelir.</p>
+
+            <h2>14. Bölünebilirlik</h2>
+            <p>Bu koşulların herhangi bir maddesinin geçersiz veya uygulanamaz bulunması halinde, diğer maddeler geçerliliğini korumaya devam eder.</p>
+
+            <h2>15. Uyuşmazlıkların Çözümü</h2>
+            <p>İşbu Kullanım Koşullarından doğan uyuşmazlıklarda Türkiye Cumhuriyeti kanunları uygulanır. Uyuşmazlıkların çözümünde İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+
+            <h2>16. İletişim</h2>
+            <p>Yiğit Öner<br>E-posta: <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a><br>Adres: İstanbul, Türkiye</p>
         </div>
 
-        <!-- TOPLULUK KURALLARI -->
-        <div id="community" style="display:none; margin-top: 32px; padding-top: 32px; border-top: 2px solid #F1F5F9;">
+        <!-- ==================== TOPLULUK KURALLARI ==================== -->
+
+        <div class="section">
             <h1>Topluluk Kuralları</h1>
-            <p class="date">Son güncelleme: Mart 2026</p>
+            <p class="date">Son güncelleme: Nisan 2026</p>
+
+            <p>VennY, güvenli ve saygılı bir sosyal etkinlik platformudur. Tüm kullanıcılarımızın aşağıdaki kurallara uyması zorunludur. Kurallara uymayan kullanıcılar uyarı, geçici veya kalıcı hesap kısıtlaması ile karşılaşabilir.</p>
+            <p>VennY, sakıncalı içeriklere ve kötü niyetli kullanıcılara karşı sıfır tolerans politikası uygular.</p>
 
             <h2>1. Genel Davranış Kuralları</h2>
             <ul>
                 <li>Tüm kullanıcılara saygılı ve nazik davranın.</li>
-                <li>Ayrımcılık, nefret söylemi ve hakaret yasaktır.</li>
-                <li>Taciz, tehdit, zorbalık ve korkutma yasaktır.</li>
-                <li>Diğer kullanıcıların kişisel bilgilerini izinsiz paylaşmak yasaktır.</li>
-                <li>Kullanıcılar, rahatsız edici buldukları etkinlikleri veya diğer kullanıcıları uygulama içindeki <strong>"Şikayet Et"</strong> ve <strong>"Engelle"</strong> butonlarını kullanarak anında bildirebilir veya gizleyebilirler. Şikayetler 24 saat içinde incelenir.</li>
+                <li>Irk, din, cinsiyet, cinsel yönelim, etnik köken, milliyet veya engellilik durumuna dayalı ayrımcılık, nefret söylemi ve hakaret kesinlikle yasaktır.</li>
+                <li>Taciz, tehdit, zorbalık, takip ve korkutma içerikli her türlü davranış yasaktır.</li>
+                <li>Diğer kullanıcıların kişisel bilgilerini (adres, telefon, kimlik vb.) izinsiz paylaşmak yasaktır.</li>
+                <li>Platformu veya etkinlikleri kullanarak başkalarını dolandırmak, maddi çıkar sağlamak veya manipüle etmek yasaktır.</li>
+                <li>Kullanıcılar, rahatsız edici buldukları etkinlikleri veya diğer kullanıcıları uygulama içindeki "Şikayet Et" ve "Engelle" butonlarını kullanarak anında bildirebilir veya gizleyebilirler. Şikayetler 24 saat içinde incelenir.</li>
             </ul>
 
-            <h2>2. İçerik Kuralları</h2>
+            <h2>2. Etkinlik Kuralları</h2>
             <ul>
-                <li>Müstehcen, pornografik veya cinsel içerik yasaktır.</li>
-                <li>Şiddet içerikli paylaşımlar yasaktır.</li>
-                <li>Spam, reklam ve ticari tanıtım yasaktır.</li>
-                <li>Sahte profil oluşturmak yasaktır.</li>
+                <li>Etkinlik açıklamaları doğru ve güncel olmalıdır. Yanıltıcı bilgi vermek yasaktır.</li>
+                <li>Yasa dışı faaliyetlere yönelik etkinlik oluşturmak kesinlikle yasaktır.</li>
+                <li>Etkinlik organizatörleri, oluşturdukları etkinliklerden ve içeriklerinden sorumludur.</li>
+                <li>Kabul edildikten sonra etkinliğe katılmamak (no-show) güvenilirlik puanınızı olumsuz etkiler.</li>
+                <li>Organizatör, etkinliğine gelmezse güvenilirlik puanı düşer ve hesabı geçici olarak kısıtlanır.</li>
+                <li>Etkinliklerde katılımcıların güvenliğini tehlikeye atacak davranışlarda bulunmak yasaktır.</li>
+                <li>Kullanıcılar aynı anda en fazla 1 aktif etkinlik oluşturabilir.</li>
+                <li>Günde en fazla 3 etkinlik silinebilir. 3. silme işleminden sonra 24 saat boyunca yeni etkinlik oluşturulamaz.</li>
+                <li>Etkinlikler herkese açık veya yalnızca takipçilere açık olarak oluşturulabilir.</li>
+            </ul>
+
+            <h2>3. İçerik Kuralları</h2>
+            <ul>
+                <li>Küfür, hakaret ve argo içerikli paylaşımlar otomatik olarak filtrelenir.</li>
+                <li>Müstehcen, pornografik veya cinsel içerikli paylaşımlar yasaktır.</li>
+                <li>Şiddet içerikli, kan ve vahşet barındıran paylaşımlar yasaktır.</li>
+                <li>Spam, reklam, ticari tanıtım ve çıkar amaçlı içerikler yasaktır.</li>
+                <li>Sahte profil oluşturmak ve başka birinin kimliğine bürünmek yasaktır.</li>
+                <li>Terör, şiddet ve nefret örgütlerini destekleyen veya tanıtan içerikler yasaktır.</li>
+                <li>Telif hakkıyla korunan içerikleri izinsiz paylaşmak yasaktır.</li>
                 <li><strong>Çocukların cinsel istismarına yönelik her türlü içerik (CSAM) kesinlikle yasaktır. Sıfır tolerans politikası uygulanır; bu tür içerikleri paylaşan hesaplar derhal kalıcı olarak kapatılır ve yetkili yasal mercilere bildirilir.</strong></li>
             </ul>
 
-            <h2>3. Takip Sistemi Kuralları</h2>
+            <h2>4. Takip Sistemi Kuralları</h2>
             <ul>
                 <li>Takip sistemi karşılıklı saygı çerçevesinde kullanılmalıdır.</li>
+                <li>Takip isteği gönderilir, karşı taraf kabul veya reddeder. Onaysız takip yapılamaz.</li>
                 <li>Takip isteklerini toplu veya otomatik olarak göndermek (spam takip) yasaktır.</li>
                 <li>Engellenen kullanıcıların farklı hesaplarla takip etmeye çalışması yasaktır.</li>
+                <li>Engelleme durumunda tüm takip ilişkileri otomatik olarak sonlandırılır.</li>
+                <li>Kullanıcılar istedikleri zaman takipten çıkabilir veya takipçilerini çıkarabilir.</li>
             </ul>
 
-            <h2>4. Hesap Kısıtlamaları</h2>
+            <h2>5. Profil Fotoğrafı Kuralları</h2>
+            <p>Profil fotoğrafı yüklemek isteğe bağlıdır. Ancak yüklenen fotoğrafların aşağıdaki kurallara uyması zorunludur:</p>
+            <ul>
+                <li>Profil fotoğrafı sizin gerçek fotoğrafınız olmalıdır. Başkalarına ait fotoğrafları kullanmak yasaktır.</li>
+                <li>Müstehcen, çıplak veya cinsel içerikli fotoğraflar kesinlikle yasaktır.</li>
+                <li>Şiddet, nefret veya rahatsız edici görseller içeren fotoğraflar yasaktır.</li>
+                <li>Logo, reklam, ticari tanıtım veya metin içeren fotoğraflar yasaktır.</li>
+                <li>Üçüncü kişilerin izinsiz fotoğraflarını kullanmak (ünlüler dahil) yasaktır.</li>
+                <li>Uygunsuz fotoğraf tespit edildiğinde fotoğraf kaldırılır ve kullanıcıya yaptırım uygulanabilir.</li>
+            </ul>
+
+            <h2>6. Güvenilirlik Sistemi</h2>
+            <ul>
+                <li>Her kullanıcının 1-5 arası bir güvenilirlik puanı vardır.</li>
+                <li>Etkinliğe katılıp QR check-in yapan kullanıcılar 5 yıldız alır.</li>
+                <li>Kabul edildiği halde etkinliğe gelmeyen kullanıcılar 1 yıldız alır.</li>
+                <li>Organizatör gelmedi oylamasında %50 ve üzeri oy alan organizatör 1 yıldız alır ve 7 gün hesap kısıtlaması uygulanır.</li>
+                <li>Güvenilirlik puanı, diğer kullanıcılar tarafından profilinizde görülebilir.</li>
+                <li>Güvenilirlik sistemi otomatik olarak işler ve manipüle edilemez.</li>
+            </ul>
+
+            <h2>7. Raporlama ve Moderasyon</h2>
+            <ul>
+                <li>Kurallara aykırı içerik veya davranış gördüğünüzde raporlama butonunu kullanın.</li>
+                <li>Raporlar admin ekibimiz tarafından incelenir.</li>
+                <li>Asılsız, kötü niyetli veya toplu olarak organize edilmiş raporlamalar yapan kullanıcılar da yaptırımla karşılaşabilir.</li>
+                <li>2 ve üzeri rapor alan etkinlik/kullanıcı otomatik olarak incelemeye alınır.</li>
+                <li>Raporlama sonuçları gizlidir ve raporlayan kişinin kimliği paylaşılmaz.</li>
+            </ul>
+
+            <h2>8. Hesap Kısıtlamaları</h2>
             <ul>
                 <li>İlk ihlal: Uyarı</li>
                 <li>Tekrarlayan ihlal: 7 gün hesap kısıtlaması</li>
                 <li>Ciddi ihlal: Kalıcı hesap kapatma</li>
-                <li>Yasa dışı faaliyet: Hesap kapatma ve yetkili makamlara bildirim</li>
+                <li>Yasa dışı faaliyet: Hesap kapatma + gerekli hallerde yetkili makamlara bildirim</li>
                 <li>Günde 3'ten fazla etkinlik silme: 24 saat etkinlik oluşturma kısıtlaması</li>
             </ul>
+            <p>Kısıtlama kararları VennY'ın takdirindedir. Kısıtlanan kullanıcılar <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a> adresine itirazda bulunabilir.</p>
 
-            <h2>5. Yaş Sınırı</h2>
-            <p>VennY yalnızca 18 yaş ve üzeri kullanıcılara açıktır.</p>
+            <h2>9. Yaş Sınırı</h2>
+            <p>VennY yalnızca 18 yaş ve üzeri kullanıcılara açıktır. 18 yaşından küçük olduğu tespit edilen kullanıcıların hesapları derhal kapatılır ve verileri silinir.</p>
+
+            <h2>10. Güvenlik Tavsiyeleri ve Sorumluluk Reddi</h2>
+            <p>VennY, kullanıcıları bir araya getiren bir aracı platformdur. Platform üzerinden organize edilen etkinliklerde yaşanan fiziksel uyuşmazlıklar, kazalar, yaralanmalar, hırsızlık, dolandırıcılık, hastalık veya diğer her türlü olumsuz olaylardan VennY sorumlu tutulamaz.</p>
+            <p>Etkinliklere katılım tamamen kullanıcının kendi iradesi ve sorumluluğundadır. Aşağıdaki güvenlik tavsiyelerine uymanızı önemle rica ederiz:</p>
+            <ul>
+                <li>Tanımadığınız kişilerle buluşurken herkese açık, kalabalık mekânları tercih edin.</li>
+                <li>Etkinliğe gideceğinizi güvendiğiniz birine bildirin.</li>
+                <li>Kendinizi güvende hissetmediğiniz durumlardan ayrılmaktan çekinmeyin.</li>
+                <li>Kişisel finansal bilgilerinizi veya adres bilgilerinizi paylaşmayın.</li>
+                <li>Etkinlik sırasında alkol veya uyuşturucu etkisi altında olduğunuzu düşündüğünüz kişilerden uzak durun.</li>
+                <li>Acil bir durum yaşarsanız öncelikle 112'yi arayın.</li>
+            </ul>
+
+            <h2>11. İletişim</h2>
+            <p>Topluluk kurallarıyla ilgili sorularınız, itirazlarınız veya bildirimleriniz için: <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a></p>
+        </div>
+
+        <!-- ==================== NAVİGASYON ==================== -->
+
+        <div class="nav" style="margin-top: 40px;">
+            <p style="color: #94A3B8; font-size: 12px;">© 2026 VennY — Yiğit Öner. Tüm hakları saklıdır.</p>
         </div>
 
     </div>
