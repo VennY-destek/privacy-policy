@@ -50,22 +50,7 @@
             font-size: 14px;
         }
         .contact a { color: #667EEA; text-decoration: none; font-weight: 600; }
-        .nav {
-            text-align: center;
-            margin-top: 24px;
-            padding-top: 20px;
-            border-top: 1px solid #F1F5F9;
-        }
-        .nav a {
-            color: #667EEA;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 600;
-            margin: 0 12px;
-            cursor: pointer;
-        }
         .section { margin-top: 32px; padding-top: 32px; border-top: 2px solid #F1F5F9; }
-        .strong { font-weight: 700; }
         @media (max-width: 600px) { .container { padding: 24px 18px; } }
     </style>
 </head>
@@ -100,7 +85,7 @@
         <h3>Güvenilirlik Verileri</h3>
         <p>Güvenilirlik puanı, katılım sayısı, no-show kayıtları</p>
         <h3>Teknik Veriler</h3>
-        <p>Cihaz bilgileri, IP adresi, FCM token (bildirim için), uygulama kullanım verileri</p>
+        <p>Cihaz bilgileri, IP adresi, FCM token (bildirim için), uygulama kullanım verileri. Toplanan teknik veriler, kullanıcıyı doğrudan tanımlamaya yönelik olmayıp hizmetin iyileştirilmesi amacıyla kullanılır.</p>
         <h3>Cihaz İzinleri</h3>
         <p>Kamera Erişimi: QR check-in taraması ve profil fotoğrafı çekmek için cihazınızın kamerasına erişim talep edilir. Kamera yalnızca bu amaçlarla kullanılır ve sürekli erişim sağlanmaz.</p>
         <p>Galeri/Fotoğraf Erişimi: Profil fotoğrafı yüklemek için cihazınızın fotoğraf galerisine erişim talep edilir. Galerinizdeki diğer fotoğraflara erişim sağlanmaz, yalnızca seçtiğiniz fotoğraf yüklenir.</p>
@@ -167,6 +152,7 @@
             <li>Veritabanı erişim kuralları (Firestore Security Rules) ile yetkisiz erişim engellenir</li>
             <li>Tüm iletişim SSL/TLS şifreleme ile korunur</li>
             <li>Admin erişimi yetkili kişilerle sınırlıdır</li>
+            <li>İçerik moderasyonu hem otomatik sistemler hem de insan incelemesi ile gerçekleştirilebilir</li>
         </ul>
         <p>Hiçbir elektronik iletişim veya depolama yöntemi %100 güvenli değildir. Bu nedenle mutlak güvenlik garanti edilememektedir, ancak verilerinizin korunması için azami özen gösterilmektedir.</p>
 
@@ -257,7 +243,7 @@
                 <li>Organizatörler, etkinlik bilgilerinin doğruluğundan ve güncelliğinden sorumludur.</li>
                 <li>Her kullanıcı aynı anda en fazla 1 aktif etkinlik oluşturabilir.</li>
                 <li>Günde en fazla 3 etkinlik silinebilir. 3. silme işleminden sonra 24 saat boyunca yeni etkinlik oluşturulamaz.</li>
-                <li>Etkinlikler herkese açık veya yalnızca takipçilere açık olarak oluşturulabilir.</li>
+                <li>Etkinlikler herkese açık veya yalnızca takipçilere açık olarak oluşturulabilir. Takipçilere özel etkinlikler yalnızca organizatörün takipçileri tarafından görülebilir.</li>
                 <li>Etkinlik saatine 1.5 saatten az kaldığında etkinlik düzenlenemez, silinemez ve katılımcılar çıkarılamaz.</li>
                 <li>Etkinlik saatinden 1 saat sonra organizatör "Etkinliği Bitir" butonunu kullanabilir.</li>
                 <li>Etkinlik saatinden 24 saat sonra tüm etkinlik verileri (mesajlar, başvurular dahil) otomatik olarak silinir.</li>
@@ -278,7 +264,7 @@
                 <li>QR check-in yapan katılımcılar ve en az 1 katılımcısı olan organizatörler 5 yıldız alır.</li>
                 <li>Kabul edildiği halde gelmeyen katılımcılar 1 yıldız alır.</li>
                 <li>Organizatör gelmedi oylamasında %50 ve üzeri oy alan organizatör 1 yıldız ve 7 gün hesap kısıtlaması alır.</li>
-                <li>Güvenilirlik puanı diğer kullanıcılar tarafından görülebilir.</li>
+                <li>Güvenilirlik puanı diğer kullanıcılar tarafından görülebilir ve organizatörlerin başvuru değerlendirmesinde referans olarak kullanılabilir.</li>
             </ul>
 
             <h2>7. İçerik Lisansı ve Sorumluluk</h2>
@@ -294,14 +280,16 @@
             <ul>
                 <li>VennY, etkinliklerde yaşanan hiçbir olaydan (kaza, yaralanma, anlaşmazlık, hırsızlık, zarar, hastalık, ölüm vb.) doğrudan veya dolaylı olarak sorumlu değildir.</li>
                 <li>Etkinliklere katılım tamamen kullanıcının kendi iradesiyle gerçekleşir. Bazı etkinlikler doğası gereği risk içerebilir. Katılarak bu riskleri kabul etmiş sayılırsınız.</li>
-                <li>Kullanıcıların birbirleriyle olan ilişkileri, anlaşmazlıkları ve iletişimleri kendi sorumluluğundadır.</li>
-                <li>VennY, kullanıcıların paylaştığı içeriklerin doğruluğunu, güvenilirliğini veya yasallığını garanti etmez.</li>
+                <li>Kullanıcıların birbirleriyle olan ilişkileri, anlaşmazlıkları ve iletişimleri kendi sorumluluğundadır. VennY bu ilişkilerin tarafı değildir.</li>
+                <li>VennY, kullanıcıların paylaştığı içeriklerin doğruluğunu, güvenilirliğini veya yasallığını garanti etmez ve bu içeriklerden sorumlu değildir.</li>
                 <li>VennY, kullanıcılar hakkında arka plan kontrolü yapmaz ve kullanıcıların beyanlarının doğruluğunu teyit etmez.</li>
                 <li>Platform "olduğu gibi" (as-is) sunulmaktadır. VennY, Platformun kesintisiz, hatasız veya güvenli çalışacağını garanti etmez.</li>
-                <li>VennY, 5651 sayılı Kanun kapsamında yer sağlayıcı konumundadır.</li>
+                <li>VennY'ın bu sözleşme kapsamındaki toplam sorumluluğu, ilgili olaydan önceki 12 ay içinde kullanıcı tarafından VennY'a ödenen ücretle (şu an ücretsiz olduğundan 0 TL) sınırlıdır.</li>
+                <li>VennY, 5651 sayılı Kanun kapsamında yer sağlayıcı konumundadır ve kullanıcı içeriklerini önceden kontrol etme yükümlülüğü bulunmamaktadır.</li>
             </ul>
+            <p>Etkinliklere katılırken sağduyunuzu kullanın ve güvenliğinize dikkat edin. Tanımadığınız insanlarla buluşurken gerekli tedbirleri alınız.</p>
             <h3>Mağaza Bağımsızlığı ve Sponsorluk Bildirimi</h3>
-            <p>VennY üzerinden düzenlenen etkinlikler, organizasyonlar ve aktiviteler; Apple Inc., Google LLC veya herhangi bir uygulama mağazası operatörü tarafından desteklenmemekte, sponsor edilmemekte veya onaylanmamaktadır.</p>
+            <p>VennY üzerinden düzenlenen etkinlikler, organizasyonlar ve aktiviteler; Apple Inc., Google LLC veya herhangi bir uygulama mağazası operatörü tarafından desteklenmemekte, sponsor edilmemekte veya onaylanmamaktadır. Bu etkinlikler tamamen kullanıcılar tarafından oluşturulmaktadır ve uygulama mağazalarının bu etkinliklerle hiçbir bağlantısı veya sorumluluğu yoktur.</p>
 
             <h2>9. Tazminat</h2>
             <p>Platformu kullanımınızdan, içeriklerinizden, bu koşulları ihlal etmenizden veya bir etkinliğe katılımınızdan kaynaklanan üçüncü kişi talep, dava ve zararlarına karşı VennY'ı ve yetkililerini tazmin etmeyi, savunmayı ve zararsız tutmayı kabul edersiniz.</p>
@@ -311,27 +299,31 @@
 
             <h2>11. Hesap Sonlandırma</h2>
             <ul>
-                <li>Kullanıcılar hesaplarını istedikleri zaman uygulama içinden (Profil > Hesabı Sil) silebilir. Yasal saklama yükümlülüğü bulunan veriler hariç olmak üzere, hesap silindiğinde tüm veriler (profil bilgileri, etkinlikler, başvurular, takip ilişkileri, mesajlar, bildirimler, profil fotoğrafı, raporlar, geri bildirimler ve engelleme kayıtları) kalıcı olarak silinir.</li>
+                <li>Yasal saklama yükümlülüğü bulunan veriler hariç olmak üzere, kullanıcılar hesaplarını istedikleri zaman uygulama içinden (Profil > Hesabı Sil) silebilir. Hesap silindiğinde tüm veriler (profil bilgileri, etkinlikler, başvurular, takip ilişkileri, mesajlar, bildirimler, profil fotoğrafı, raporlar, geri bildirimler ve engelleme kayıtları) kalıcı olarak silinir.</li>
                 <li>VennY, işbu koşulları ihlal eden, topluluk kurallarına uymayan veya Platform güvenliğini tehdit eden kullanıcıların hesaplarını önceden bildirim yapmaksızın askıya alabilir veya kalıcı olarak kapatabilir.</li>
+                <li>Hesap kapatılması durumunda ücret iadesi yapılmaz (Platform şu an ücretsizdir).</li>
                 <li>Hesap kapatıldığında kişisel veriler Gizlilik Politikası çerçevesinde işlenir.</li>
             </ul>
 
-            <h2>12. Yasal Bildirimler</h2>
+            <h2>12. Hizmet Değişikliği</h2>
+            <p>VennY, hizmeti kısmen veya tamamen değiştirme, askıya alma veya sonlandırma hakkını saklı tutar. Bu durumda kullanıcılar uygulama içi bildirim veya e-posta yoluyla bilgilendirilir.</p>
+
+            <h2>13. Yasal Bildirimler</h2>
             <ul>
                 <li>Yargı mercilerinden gelen yasal talepler doğrultusunda kullanıcı bilgileri yetkili makamlara paylaşılabilir.</li>
                 <li>5651 sayılı Kanun kapsamında log kayıtları yasal süre boyunca (en az 2 yıl) saklanır.</li>
             </ul>
 
-            <h2>13. Değişiklikler</h2>
-            <p>VennY, işbu Kullanım Koşullarını herhangi bir zamanda güncelleme hakkını saklı tutar. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla duyurulur. Platformu kullanmaya devam etmeniz güncel koşulları kabul ettiğiniz anlamına gelir.</p>
+            <h2>14. Değişiklikler</h2>
+            <p>VennY, işbu Kullanım Koşullarını herhangi bir zamanda güncelleme hakkını saklı tutar. Önemli değişiklikler uygulama içi bildirim veya e-posta yoluyla duyurulur. Değişiklikler Platform üzerinde yayınlandığı andan itibaren geçerlidir. Değişiklikleri kabul etmiyorsanız hesabınızı kapatabilirsiniz. Platformu kullanmaya devam etmeniz güncel koşulları kabul ettiğiniz anlamına gelir.</p>
 
-            <h2>14. Bölünebilirlik</h2>
+            <h2>15. Bölünebilirlik</h2>
             <p>Bu koşulların herhangi bir maddesinin geçersiz veya uygulanamaz bulunması halinde, diğer maddeler geçerliliğini korumaya devam eder.</p>
 
-            <h2>15. Uyuşmazlıkların Çözümü</h2>
+            <h2>16. Uyuşmazlıkların Çözümü</h2>
             <p>İşbu Kullanım Koşullarından doğan uyuşmazlıklarda Türkiye Cumhuriyeti kanunları uygulanır. Uyuşmazlıkların çözümünde İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
 
-            <h2>16. İletişim</h2>
+            <h2>17. İletişim</h2>
             <p>Yiğit Öner<br>E-posta: <a href="mailto:yoner2905@gmail.com">yoner2905@gmail.com</a><br>Adres: İstanbul, Türkiye</p>
         </div>
 
@@ -378,6 +370,7 @@
                 <li>Telif hakkıyla korunan içerikleri izinsiz paylaşmak yasaktır.</li>
                 <li><strong>Çocukların cinsel istismarına yönelik her türlü içerik (CSAM) kesinlikle yasaktır. Sıfır tolerans politikası uygulanır; bu tür içerikleri paylaşan hesaplar derhal kalıcı olarak kapatılır ve yetkili yasal mercilere bildirilir.</strong></li>
             </ul>
+            <p>VennY, gerekli gördüğü durumlarda içerikleri kaldırma, görünürlüğünü azaltma veya kullanıcı erişimini sınırlandırma hakkını saklı tutar.</p>
 
             <h2>4. Takip Sistemi Kuralları</h2>
             <ul>
